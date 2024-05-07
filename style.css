@@ -1,0 +1,387 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html,
+body {
+    height: 100vh; /* Use viewport height for full screen height */
+    font-family: "Source Code Pro", monospace;
+    background-image: url(/Screenshot\ 2024-05-04\ 135316.png);
+    background-size: cover; /* Resize background image to cover the entire background */
+    background-position: center; /* Center the background image */
+    width: 100%;
+}
+h1{
+    color: rgb(94, 41, 255);
+}
+h2{
+    font-size: 2rem;
+    color: rgb(94, 41, 255);
+}
+p{
+    color: rgb(0, 0, 0);
+}
+h3{
+    font-size: 2rem;
+}
+
+nav{
+    display: block;
+    align-items:baseline;
+    justify-content:left;
+    font-size: 2.3rem;
+    background-color: rgba(255, 255, 255, 0.354);
+    border: 2px solid black;
+    color: antiquewhite;
+    border-radius: 20px;
+    padding: 20px 70px 20px;
+    line-height: 40px ;
+    box-shadow:2px 2px 211px black;
+    animation: navv infinite 0.3s;
+}
+
+@keyframes nsvv {
+    0%{
+        
+    }
+    20%{
+
+    }
+    40%{
+
+    }
+    60%{
+
+    }
+    80%{
+
+    }
+    100%{
+
+    }
+    
+}
+
+
+.box {
+    position: absolute;
+    top: 60%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    border-radius: 20px;
+    box-shadow: 2px 2px 212px rgb(0, 0, 0);
+    padding: 20px 30px 20px;
+    min-width: 180px;
+    /* height: 30%; */
+    background-color: rgb(255, 255, 255);
+    transition: all ease-in 0.3s;
+    border: 3px solid black;
+    min-height: 200px;
+    animation-name: weatherAnimation;
+    z-index: 9;
+    animation-duration: 1s;
+    animation-timing-function: ease-in-out;
+    animation-iteration-count: infinite;
+}
+
+.box:hover {
+    position: absolute;
+    z-index: 9;
+
+    top: 60%;
+    animation-name: weatherAnimation;
+    animation-duration: 1s;
+    animation-timing-function: ease-in-out;
+    animation-iteration-count: infinite;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    border-radius: 20px;
+    box-shadow: 2px 2px 212px rgb(0, 0, 0);
+    padding: 20px 30px 20px;
+    min-width: 180px;
+    /* height: 30%; */
+    background-color: rgba(148, 145, 145, 0.395);
+    border: 3px solid black;
+    min-height: 200px;
+}
+
+#search{
+    padding: 20px 20px 20px;
+    border-radius: 20px;
+    color: rgb(0, 0, 0);
+    font-size: 1.5rem;
+}
+
+
+@keyframes weatherAnimation {
+    0%{
+        background-image: url(/4102326_cloud_sun_sunny_weather_icon.png);
+    }
+    20%{
+        background-color: rgba(50, 50, 50, 0.543);
+    }
+    40%{
+        background-color: rgba(248, 250, 155, 0.612);
+    }
+    60%{
+        background-color: rgba(255, 244, 126, 0.445);
+    }
+    80%{
+        background-color: rgba(255, 255, 82, 0.66);
+    }
+    100% {
+        background-color: rgba(255, 255, 65, 0.263);
+        transition: all ease-in-out;
+    }
+    
+}
+
+/* 
+.map{
+    position: absolute;
+    top: 50%;
+    left: 70%;
+    transform: translate(-50%, -50%);
+    padding: 20px 20px 20px;
+    
+} */
+
+.vertical-line {
+    position: absolute;
+    top: 115%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    border-left: 2px solid black; 
+    height: 300px; 
+    margin: 0 auto; 
+}
+
+
+  
+  .editor-container {
+    width: 900px;
+    height: 540px;
+    margin: 20px auto;
+    position: relative;
+    z-index: 0;
+
+  }
+  
+  #editor {
+    position: absolute;
+    /* background-color: rgba(0, 0, 0, 0.664); */
+    top: 185%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    height: 100%;
+    width: 100%;
+    font-size: 20px;
+  }
+
+  .sec{
+    position: absolute;
+    background-color: rgba(0, 0, 0, 0.623);
+    border: 7px solid black;
+    border-radius: 7px;
+    top: 275%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 250px;
+  }
+  .right{
+    display: block;
+  }
+
+  .down{
+    font-size: 1.6rem;
+    border-radius: 7px;
+    border: 3px solid black;
+    background-color: rgb(131, 191, 255);
+    text-decoration: none;
+    letter-spacing: -5px;
+  }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* Media queries for different screen sizes */
+@media only screen and (max-width: 480px) {
+    /* Styles for small phones */
+    body{
+        /* background-color: rgb(255, 94, 94); */
+    }
+    
+    h2{
+        font-size: 1rem;
+        color: rgb(94, 41, 255);
+    }
+    h3{
+        font-size: 1rem;
+        color: rgb(0, 0, 0);
+    }
+    .box {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        border-radius: 20px;
+        box-shadow: 2px 2px 212px rgb(0, 0, 0);
+        padding: 10px 20px 10px;
+        max-width: 320px;
+        /* height: 30%; */
+        background-color: rgb(255, 255, 255);
+        
+        border: 3px solid black;
+        min-height: 210px;
+    }
+    .box:hover {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        border-radius: 20px;
+        box-shadow: 2px 2px 212px rgb(0, 0, 0);
+        padding: 10px 20px 10px;
+        max-width: 320px;
+        /* height: 30%; */
+        background-color: rgba(255, 255, 255, 0.326);
+        
+        border: 3px solid black;
+        min-height: 210px;
+    }
+    #search{
+        padding: 10px 10px 10px;
+        /* margin-left: -200px; */
+        border-radius: 20px;
+        color: rgb(0, 0, 0);
+        font-size: 1.1rem;
+    }
+    #editor {
+        position: absolute;
+        background-color: rgba(0, 0, 0, 0.454);
+        top: 355%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        height: 100%;
+        width: 100%;
+        font-size: 5px;
+      }
+      .editor-container {
+        width: 300px;
+        height: 240px;
+        margin: 20px auto;
+        position: relative;
+    
+      }
+      .sec{
+        position: absolute;
+        background-color: rgba(0, 0, 0, 0.623);
+        border: 7px solid black;
+        color: antiquewhite;
+        border-radius: 7px;
+        top: 205%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        gap: 25px;
+      }
+    
+      .down{
+        font-size: 1rem;
+        border-radius: 7px;
+        border: 3px solid black;
+        background-color: rgb(137, 188, 255);
+        text-decoration: none;
+        letter-spacing: -5px;
+      }
+    
+      
+    
+   /* .map {
+    position: absolute;
+    top: 90%; 
+    left: 50%; 
+    width: 200px;
+    height: 250px; 
+    width: auto;
+    padding: 10px; 
+    box-sizing: border-box;  */
+}
+
+
+@media only screen and (min-width: 430px) and (max-width: 768px) {
+    /* Styles for medium-sized phones */
+    body{
+        /* background-color: rgb(255, 242, 94); */
+    }
+    .sec{
+        position: absolute;
+        background-color: rgba(0, 0, 0, 0.623);
+        border: 7px solid black;
+        border-radius: 7px;
+        top: 145%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        gap: 25px;
+      }
+      .right{
+        display: block;
+      }
+    
+      .down{
+        font-size: 1.6rem;
+        border-radius: 7px;
+        border: 3px solid black;
+        background-color: rgb(131, 191, 255);
+        text-decoration: none;
+        letter-spacing: -5px;
+      }
+    
+}
+
+@media only screen and (min-width: 800px) and (max-width: 1024px) {
+    /* Styles for large phones or small tablets */
+    body{
+        /* background-color: rgb(169, 255, 94); */
+    }
+  
+}
+
+/* Add more media queries as needed for larger devices */
